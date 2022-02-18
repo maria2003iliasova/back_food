@@ -1,0 +1,24 @@
+{
+  "name": "back_food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maria2003iliasova/back_food.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maria2003iliasova/back_food/issues"
+  },
+  "homepage": "https://github.com/maria2003iliasova/back_food#readme",
+  "dependencies": {
+    "knex": "^1.0.3",
+    "knex-migrate": "^1.7.4",
+    "pg": "^8.7.3"
+  }
+}
