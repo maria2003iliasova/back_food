@@ -72,10 +72,10 @@ exports.up = async function(knex) {
         table.string("photo_path").notNullable();
         table.integer("photo_gallery_id").notNullable();
         table
-      .foreign("photo_gallery_id")
-      .references("photo_galleries.id")
-      .onDelete("RESTRICT")
-      .onUpdate("CASCADE");
+        .foreign("photo_gallery_id")
+        .references("photo_galleries.id")
+        .onDelete("RESTRICT")
+        .onUpdate("CASCADE");
     });
     await knex.schema.createTable("orders_goods", (table) => {
         table.increments("id");
