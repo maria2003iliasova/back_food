@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migrate:up": "knex-migrate up",
+    "migrate:down": "knex-migrate down",
+    "seed": "knex seed:run"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/maria2003iliasova/back_food#readme",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "knex": "^1.0.3",
     "knex-migrate": "^1.7.4",
     "pg": "^8.7.3"
