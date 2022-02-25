@@ -62,7 +62,7 @@ exports.seed = async function (knex) {
         {
             id: 1,
             order_id: 1,
-            good_id: 1
+            goods_id: 1
         },
     ]);
 };
