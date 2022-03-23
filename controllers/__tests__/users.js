@@ -5,7 +5,7 @@ const usersController = require("../users");
 
 const users = [
   { name: "John", email: "johm@smith.com", password: "12345" },
-  { name: "Jack", email: "jack@smith.com", password: "12346" },
+  { name: "Max", email: "johm@smith.com", password: "12346" },
   { name: "Jane", email: "jane@smith.com", password: "12347" },
   { name: "Inna", email: "inna@smith.com", password: "12348" },
 ];
@@ -33,8 +33,8 @@ test("Can save all fields on register", async () => {
 });
 
 test("Cannot register with same email twice", async () => {
-  await usersController.register(users[0]);
-  const result = await usersController.register(users[0]).catch((err) => err);
+  await usersController.register(users[1]);
+  const result = await usersController.register(users[1]).catch((err) => err);
 
   expect(result).toEqual(expect.any(ControllerException));
   expect(result.exceptionCode).toBe("EMAIL_IN_USE");

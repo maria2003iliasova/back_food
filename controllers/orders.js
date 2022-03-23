@@ -2,7 +2,7 @@ const ControllerException = require("../utils/ControllerException");
 const knex = require("../utils/db");
 
 //Добавить заказ
-exports.add_order = async ({ customer_id, status, paid, created_at, updated_at }) => {
+exports.addOrder = async ({ customer_id, status, paid, created_at, updated_at }) => {
     try {
         const [{ id: orderId }] = await knex("orders")
             .insert([{ customer_id, status, paid, created_at, updated_at }])
